@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "65618971-0383-4209-b395-3c5fd9c7ded0",
+		"name": "URL Shortner Bemobi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7829995"
+	},
+	"item": [
+		{
+			"name": "Create new URL",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"url\": \"http://www.github.com/\",\r\n    \"customAlias\": \"nando\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/create",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"create"
+					],
+					"query": [
+						{
+							"key": "url",
+							"value": "http://www.github.com/",
+							"disabled": true
+						},
+						{
+							"key": "CUSTOM_ALIAS",
+							"value": "12345",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get URL (Redirect)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/r/2pbxzx8",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"r",
+						"2pbxzx8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get most visited URLs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/mostVisitedUrls",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"mostVisitedUrls"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

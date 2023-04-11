@@ -10,7 +10,6 @@ interface ShortnedUrlStatistics {
 interface IResponseCreateNewShortnedUrlDto {
 	alias: string;
 	shortenedRedirectUrl: string;
-	shortenedUrl: string;
 	originalUrl: string;
 	statistics?: ShortnedUrlStatistics;
 }

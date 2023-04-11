@@ -39,7 +39,6 @@ class CreateNewShortnedUrlController {
 				alias: newShortenedUrl.alias,
 				originalUrl: newShortenedUrl.url,
 				shortenedRedirectUrl: `${process.env.SERVER_URL}/r/${newShortenedUrl.alias}`,
-				shortenedUrl: `${process.env.SERVER_URL}/${newShortenedUrl.alias}`,
 				statistics: {
 					time_taken: `${timeElapsedInMileseconds.toFixed(0)}ms`,
 				},
