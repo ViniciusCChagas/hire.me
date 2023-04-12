@@ -46,6 +46,7 @@ class CreateNewShortenedUrlUseCase {
 			alias: alias,
 			url: url,
 			createdAt: new Date(),
+			visitCount: 0,
 		});
 
 		await this.shortenedURLRepository.createNewShortenedUrl(newShortenedUrl);

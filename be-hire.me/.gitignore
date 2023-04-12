@@ -64,6 +64,7 @@ node_modules
 .vscode
 .yarn
 .yarnrc.yml
+.env
 yarn.lock
 package-lock.json
 coverage

@@ -1,4 +1,4 @@
-import { HiLoCounterRepository } from '../../repositories/HiLOCounterRepository';
+import { HiLoCounterRepository } from '../../repositories/HiLoCounterRepository';
 import { ShortenedURLRepository } from '../../repositories/ShortenedURLRepository';
 import { CreateNewShortnedUrlController } from './CreateNewShortenedUrlController';
 import { CreateNewShortenedUrlUseCase } from './CreateNewShortenedUrlUseCase';

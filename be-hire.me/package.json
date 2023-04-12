@@ -1,9 +1,7 @@
 {
-	"name": "be-radar-startups",
-	"version": "2.2.0.0",
-	"description": "aplicação para dashboard do radar de startups.",
-	"main": "index.js",
-	"repository": "ssh://git@bitbucket.sulamerica.com.br:7999/ar/sas-cicd-demo-node.git",
+	"name": "be-hire.me",
+	"version": "1.0",
+	"description": "",
 	"author": "",
 	"license": "ISC",
 	"properties": {

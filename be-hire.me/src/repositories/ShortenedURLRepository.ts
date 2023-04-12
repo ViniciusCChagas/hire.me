@@ -27,6 +27,7 @@ class ShortenedURLRepository implements IShortenedURLRepository {
 		alias,
 		url,
 		createdAt,
+		visitCount,
 	}: ShortenedURL): Promise<ShortenedURL> {
 		const db = mongoDbClient.db(process.env.MONGODB_DATABASE_NAME);
 		const collection = db.collection(process.env.SHORTENED_URL_COLLECTION_NAME);
@@ -35,7 +36,7 @@ class ShortenedURLRepository implements IShortenedURLRepository {
 			alias,
 			url,
 			createdAt,
-			visitCount: 0,
+			visitCount,
 		});
 
 		return new ShortenedURL({
