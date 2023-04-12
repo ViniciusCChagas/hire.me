@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"url\": \"http://www.github.com/\",\r\n    \"customAlias\": \"nando\"\r\n}",
+					"raw": "{\r\n    \"url\": \"http://www.github.com/\",\r\n    \"customAlias\": null\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -50,13 +50,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_url}}/r/2pbxzx8",
+					"raw": "{{base_url}}/r/teste",
 					"host": [
 						"{{base_url}}"
 					],
 					"path": [
 						"r",
-						"2pbxzx8"
+						"teste"
 					]
 				}
 			},
@@ -78,6 +78,33 @@
 				}
 			},
 			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "https://gentle-mountain-89438.herokuapp.com",
+			"type": "string"
 		}
 	]
 }

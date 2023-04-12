@@ -1,3 +1,11 @@
+# Links Uteis
+
+<li>Client Preview: <a href="https://tranquil-gorge-25674.herokuapp.com/" target="_blank">clique aqui</a></li>
+
+<li>Collection Postman: <a href="https://github.com/ViniciusCChagas/hire.me/blob/master/shortener.postman_collection.json" target="_blank">clique aqui</a></li>
+
+<br/>
+
 # Ferramentas utilizadas
 
 ## Algoritmo HiLo:
